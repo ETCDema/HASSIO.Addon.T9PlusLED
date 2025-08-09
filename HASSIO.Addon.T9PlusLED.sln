@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HASSIO.Addon.T9PlusLED", "HASSIO.Addon.T9PlusLED\HASSIO.Addon.T9PlusLED.csproj", "{89D198A9-2655-793B-C194-98362488A38B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HASSIO.Supervisor.API", "..\Github.HASSIO.Supervisor.API\HASSIO.Supervisor.API\HASSIO.Supervisor.API.csproj", "{C03E163F-EDC3-3319-9C9F-42F94A727AA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "@HASSIO", "@HASSIO", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+	ProjectSection(SolutionItems) = preProject
+		@HASSIO\config.yaml = @HASSIO\config.yaml
+		@HASSIO\Dockerfile = @HASSIO\Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89D198A9-2655-793B-C194-98362488A38B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D198A9-2655-793B-C194-98362488A38B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D198A9-2655-793B-C194-98362488A38B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D198A9-2655-793B-C194-98362488A38B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03E163F-EDC3-3319-9C9F-42F94A727AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03E163F-EDC3-3319-9C9F-42F94A727AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03E163F-EDC3-3319-9C9F-42F94A727AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03E163F-EDC3-3319-9C9F-42F94A727AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8} = {754FC069-D67B-A9D7-50A1-8D1CA196D8F1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D00C41B8-535B-413A-85A9-45A7E4F4C697}
+	EndGlobalSection
+EndGlobal

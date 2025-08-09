@@ -1,0 +1,28 @@
+name: "Mini PC T9 Plus LED"
+description: "HASSIO Add-on управления подсветкой для Mini PC T9 Plus"
+version: "1.0.0"
+url: https://github.com/ETCDema/HASSIO.Addon.T9PlusLED
+slug: "t9plus_led"
+init: false
+arch:
+  - amd64
+  - armhf
+  - armv7
+startup: application
+homeassistant_api: true
+uart: true
+options:
+  LogLevel: Information
+  T9PlusLED:
+    port              : /dev/ttyUSB1
+    modeEntityID      : input_select.server_led_mode
+    brightnessEntityID: input_number.server_led_brightness
+    speedEntityID     : input_number.server_led_speed
+schema:
+  LogLevel: list(Trace|Debug|Information|Warning|Error|Critical|None)
+  API:longAccessToken: str?
+  T9PlusLED:
+    port              : str
+    modeEntityID      : str
+    brightnessEntityID: str
+    speedEntityID     : str    

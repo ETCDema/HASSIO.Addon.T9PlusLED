@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "HASSIO.Addon.T9PlusLED": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
