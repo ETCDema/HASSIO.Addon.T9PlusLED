@@ -9,7 +9,7 @@ Add-on сделан на платформе NET9 на основе [этого �
 
 ## Установка
 
-1. Скачать [пакет](/ETCDema/HASSIO.Addon.T9PlusLED/releases/download/v1/t9plus_led.zip) и распаковать на Home Assistant сервере в папку `/addons/t9plus_led`
+1. Скачать [пакет](https://github.com/ETCDema/HASSIO.Addon.T9PlusLED/releases/download/v1/t9plus_led.zip) и распаковать на Home Assistant сервере в папку `/addons/t9plus_led`
 1. Открыть магазин дополнений  
    [![Open your Home Assistant instance and show the add-on store.](https://my.home-assistant.io/badges/supervisor_store.svg)](https://my.home-assistant.io/redirect/supervisor_store/)
 1. Запустить проверку наличия обновлений
