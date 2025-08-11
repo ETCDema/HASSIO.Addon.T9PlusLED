@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 
 namespace HASSIO.Addon.T9PlusLED
 {
@@ -45,7 +46,10 @@ namespace HASSIO.Addon.T9PlusLED
 									.ConfigureLogging(log =>
 									{
 										log.ClearProviders();
-										log.AddConsole();
+										log.AddConsole(c =>
+										{
+											c.TimestampFormat	= "yyyy-MM-dd HH:mm:ss ";
+										});
 										log.SetMinimumLevel(logLevel);
 									})
 									.ConfigureServices((ctx, services) =>
