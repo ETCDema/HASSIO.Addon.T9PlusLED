@@ -90,7 +90,7 @@ T9PlusLED:
 В обычном режиме Home Assistant передает токен доступа в переменной окружения `SUPERVISOR_TOKEN`, если по каким-то причинам нет такой переменной,
 то можно создать Long time access token и добавить в конфигурацию:
 ```YAML
-API:longAccessToken: тут прописать созданный token
+API:longLivedAccessToken: тут прописать созданный token
 ```
 
 Если какие-то другие проблемы с подключением к WebSocketAPI, то это что-то совсем неправильно работает и нужно разбираться с доступностью `ws://supervisor/core/websocket` - лог уровня `Debug` или `Trace` может помочь.

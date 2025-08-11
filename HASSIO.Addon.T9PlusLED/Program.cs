@@ -51,7 +51,7 @@ namespace HASSIO.Addon.T9PlusLED
 									.ConfigureServices((ctx, services) =>
 									{
 										services
-											.AddHASSIOSuperviserAPI(appCfg.GetValue("SUPERVISOR_TOKEN", appCfg.GetValue("API:longAccessToken", default(string)!)),
+											.AddHASSIOSuperviserAPI(appCfg.GetValue("SUPERVISOR_TOKEN", appCfg.GetValue("API:longLivedAccessToken", default(string)!)),
 																	appCfg.GetValue("API:endpoint",     default(string)))
 											.AddSingleton<IDeviceService>(sp => new T9PlusLEDService(
 																					sp.GetRequiredService<ILogger<T9PlusLEDService>>(),
