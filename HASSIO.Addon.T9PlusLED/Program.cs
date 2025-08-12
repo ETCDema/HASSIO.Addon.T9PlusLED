@@ -10,7 +10,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Console;
 
 namespace HASSIO.Addon.T9PlusLED
 {
@@ -38,7 +37,7 @@ namespace HASSIO.Addon.T9PlusLED
 
 			var logLevel        = appCfg.GetValue("LogLevel", LogLevel.Information);
 
-			var host			= Host.CreateDefaultBuilder(args)
+			using var host		= Host.CreateDefaultBuilder(args)
 									.ConfigureAppConfiguration(cfg =>
 									{
 										cfg.AddConfiguration(appCfg);
